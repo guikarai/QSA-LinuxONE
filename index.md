@@ -13,9 +13,11 @@ This document serves as a guideline for customers to collect the necessary data 
 Contact for additional information and support regarding the assessment: guillaume_hoareau@fr.ibm.com
 
 ### Introduction
-* To be able to analyze the hardware crypto utilization of Linux on IBM Z or LinuxONE, we need to gather operational data (logs, traces, dumps…  records for all systems that is part of the agreed scope (Number of LPARs).
-* This operational data collection allows us to analyze your Linux guest’s crypto activities, performance, and configuration to propose optimizations and recommendations.
-* We need the following operational data collection:
+To be able to analyze the hardware crypto utilization of Linux on IBM Z or LinuxONE, we need to gather operational data (logs, traces, dumps…  records for all systems that is part of the agreed scope (Number of LPARs).
+
+This operational data collection allows us to analyze your Linux guest’s crypto activities, performance, and configuration to propose optimizations and recommendations.
+
+We need the following operational data collection:
   -	Infrastructure cryptographic services
   -	API cryptographic services
   -	Key management services
@@ -26,10 +28,13 @@ Contact for additional information and support regarding the assessment: guillau
 See detailed guidelines in incoming operational data collection chapters.
 
 ### Mandatory operational data
-* A standard Quantum-Safe Assessment analyzes the hardware, software, Linux, KVM, APIs, network, files and their configurations. 
-* Operational data for a maximum of 1 day representing a period of significant activity (No weekend, no bank holidays).
-* Please send all the following operational data in separated files and for each Linux/KVM guests:
-*
+
+A standard Quantum-Safe Assessment analyzes the hardware, software, Linux, KVM, APIs, network, files and their configurations. 
+
+Operational data for a maximum of 1 day representing a period of significant activity (No weekend, no bank holidays).
+
+Please send all the following operational data in separated files and for each Linux/KVM guests:
+
 * **One time configuration dumps:**
   -	lscpu
   -	cat /proc/cpuinfo 
