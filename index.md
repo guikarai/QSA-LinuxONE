@@ -67,5 +67,5 @@ Please send all the following operational data in separated files and for <ins>e
 The following shell script can help you to collect results of
 
 
-bonjour je m'appelle Paul
+**bonjour je m'appelle Paul**
 
