@@ -33,10 +33,11 @@ A standard Quantum-Safe Assessment analyzes the hardware, software, Linux, KVM, 
 
 Operational data for a maximum of 1 day representing a period of significant activity (No weekend, no bank holidays).
 
-Please send all the following operational data in separated files and for each Linux/KVM guests:
+Please send all the following operational data in separated files and for <ins>each Linux/KVM guests</ins>:
 
 * **One time configuration dumps:**
   -	lscpu
+  -	cat /proc/cpuinfo
   -	cat /proc/cpuinfo 
   -	lsmod
   -	icainfo --version
