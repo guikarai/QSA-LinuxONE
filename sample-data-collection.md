@@ -3,7 +3,7 @@ This section is about collecting at first for each Linux Guest, information abou
 
 Results of a list of Linux commands to be redirected into a unique file per Linux Guest.
 
-**0. To create the target a file to persist results of linux commands:
+**0. To create the target a file to persist results of linux commands**
 ```
 touch "$(hostname)_$(date +%Y-%m-%d).txt"
 ```
