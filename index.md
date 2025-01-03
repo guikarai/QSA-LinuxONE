@@ -41,7 +41,7 @@ A standard Quantum-Safe Assessment analyzes the hardware, software, Linux, KVM, 
 
 Operational data for a maximum of 1 day representing a period of significant activity (No weekend, no bank holidays). Before sending operational data, it is important to assess with your IBM TEL expert if target environment is able to satisfy all needs.
 
-[This section](#sample-data-collection) will drive you through the process to collect sample and/or one time configuration dumps for validation. 
+[This section](https://github.com/guikarai/QSA-LinuxONE/blob/main/sample-data-collection) will drive you through the process to collect sample and/or one time configuration dumps for validation. 
 
 Once content of One time configuaration dumps validated with your IBM TEL expert, then you can proceed with the next following steps.
 
