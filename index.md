@@ -23,19 +23,19 @@ To be able to analyze the hardware crypto utilization of Linux on IBM Z or Linux
 
 This operational data collection allows us to analyze your Linux guest’s crypto activities, performance, and configuration to propose optimizations and recommendations.
 
-We need the following operational data collection:
-  -	Infrastructure cryptographic services
-  -	API cryptographic services
-  -	Key management services
-  -	Network encryption services
+To start a quantum-safe assessment on a Linux server, we typically need to evaluate the cryptographic algorithms in use and their potential vulnerabilities to quantum computing. There isn’t a single Linux command specifically designed for this, but we can use various tools and steps to initiate the assessment.
+
+Then, we will need the following operational data collection:
+  -	Infrastructure cryptographic services (hardware, software, process, device drivers, adjunct processors...)
+  -	API cryptographic services (CCA, LIBICA, OpenSSL, JAVA...)
+  -	Key management services (zKey, CCA, .pem, .key, .asc, .cer, .der, .pckcs11, .pkcs12 ...)
+  -	Network encryption services (OpenSSL, nmap, 
   -	Data at rest encryption services
   -	Application encryption services
 
 See detailed guidelines in incoming operational data collection chapters.
 
-
-
-### Mandatory operational data
+### Step 1 - one time configuration dumps for validation
 
 A standard Quantum-Safe Assessment analyzes the hardware, software, Linux, KVM, APIs, network, files and their configurations. 
 
@@ -44,27 +44,22 @@ Operational data for a maximum of 1 day representing a period of significant act
 The following shell script can help you to collect results the following **one time configuration dumps ** in one shot.
   -	lscpu
   -	cat /proc/cpuinfo
-  -	cat /proc/cpuinfo 
   -	lsmod
+  -	icainfo 
   -	icainfo --version
-  -	icainfo
   -	zkey
-  -	openssh
-
-
+  -	openssh -vv
+    
 
 Once content of One time configuaration dumps validated with your IBM TEL expert, then you can proceed with the next following steps.
 
 It will be about collecting various set of logs during 24 hours. 
 Please send all the following operational data in separated files and for <ins>each Linux/KVM guests</ins>:
 
-* **24 hours logs dumps:**
+### Step 2 - 24 hours logs dumps
   -	tcpdump
   -	icastats
   -	cpacfstats
   -	zcryptstats 
 
 The following shell script can help you to collect results of
-
-
-**bonjour je m'appelle [Paul](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#links)**
