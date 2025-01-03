@@ -59,6 +59,17 @@ Inspect the system logs for dm-crypt related errors.
 sudo dmesg | grep dm-crypt >> "$(hostname)_$(date +%Y-%m-%d).txt"
 ```
 
+To evaluate the encryption algorithm and cipher being used:
+```
+sudo dmsetup table >> "$(hostname)_$(date +%Y-%m-%d).txt"
+```
+
+Inspect /etc/crypttab to verify how encrypted devices are set up for auto-mounting.
+```
+cat /etc/crypttab >> "$(hostname)_$(date +%Y-%m-%d).txt"
+```
+
+
 **11. Evaluate module configuration**
 Use the lsmod command to check that all s390x crypto modules are properly loaded.
 ```
