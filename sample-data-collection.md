@@ -44,6 +44,20 @@ icastats >> "$(hostname)_$(date +%Y-%m-%d).txt"
 ```
 
 **10. Evaluate dmcrypt configuration**
+To list all active dm-crypt mappings.
+```
+dmsetup status >> "$(hostname)_$(date +%Y-%m-%d).txt"
+```
+
+Alternate way to list all active dm-crypt mappings.
+```
+lsblk >> "$(hostname)_$(date +%Y-%m-%d).txt"
+```
+
+Inspect the system logs for dm-crypt related errors.
+```
+sudo dmesg | grep dm-crypt >> "$(hostname)_$(date +%Y-%m-%d).txt"
+```
 
 **11. Evaluate module configuration**
 Use the lsmod command to check that all s390x crypto modules are properly loaded.
