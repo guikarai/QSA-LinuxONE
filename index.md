@@ -39,17 +39,9 @@ See detailed guidelines in incoming operational data collection chapters.
 
 A standard Quantum-Safe Assessment analyzes the hardware, software, Linux, KVM, APIs, network, files and their configurations. 
 
-Operational data for a maximum of 1 day representing a period of significant activity (No weekend, no bank holidays). Before sending operational data, it is important to assess with your IBM TEL expert if target environment is able to satisfy all needs. This is why,
+Operational data for a maximum of 1 day representing a period of significant activity (No weekend, no bank holidays). Before sending operational data, it is important to assess with your IBM TEL expert if target environment is able to satisfy all needs.
 
-The following shell script can help you to collect results the following **one time configuration dumps ** in one shot.
-  -	lscpu
-  -	cat /proc/cpuinfo
-  -	lsmod
-  -	icainfo 
-  -	icainfo --version
-  -	zkey
-  -	openssh -vv
-    
+This section [Link Text](#sample-section) will drive you through the process to collect sample and/or one time configuration dumps for validation. 
 
 Once content of One time configuaration dumps validated with your IBM TEL expert, then you can proceed with the next following steps.
 
