@@ -9,6 +9,10 @@ touch "$(hostname)_$(date +%Y-%m-%d).txt"
 ```
 
 **1. Evaluate IBM Z harware configuration**
+A Linux on IBM Z user can easily check whether the Crypto Enablement feature is installed and which algorithms are supported in hardware. Hardware-acceleration for DES, TDES, AES, and GHASH requires CPACF. Issue the command shown below to discover whether the CPACF feature is enabled on your hardware.
+```
+cat /proc/cpuinfo
+```
 
 **2. Evaluate IBM Z processor configuration**
 
