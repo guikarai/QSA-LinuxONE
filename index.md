@@ -49,4 +49,4 @@ Once content of configuaration dumps is validated with your IBM TEL expert, you 
 
 To finish the quantum-safe assessment on a Linux server, we need to evaluate the cryptographic algorithms in use and their potential vulnerabilities to quantum computing. To do so we need data collection for a representative period of time (From 4hours to 24hours). There isn’t a single Linux command specifically designed for this, but we can use various tools and steps to initiate the assessment including: tcpdump, icastats, cpacfstats, pckstats.
   
-[This section](https://github.com/guikarai/QSA-LinuxONE/blob/main/sample-data-collection) will drive you through the process to collect representative period of time (From 4hours to 24hours).
+[This section](https://github.com/guikarai/QSA-LinuxONE/blob/main/24-hour-data-collection.md) will drive you through the process to collect representative period of time (From 4hours to 24hours).
