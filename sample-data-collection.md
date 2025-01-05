@@ -27,6 +27,37 @@ cat /proc/cpuinfo >> "$(hostname)_$(date +%Y-%m-%d).txt"
 **7. Evaluate zKey configuration**
 
 **8. Evaluate OpenPGP configuration**
+To assess OpenPGP (GPG) configuration, certificates, and key materials on a Linux system, you can use the following commands.
+
+Verify the installed GPG version to ensure it supports modern algorithms.
+```
+gpg --version >> "$(hostname)_$(date +%Y-%m-%d).txt"
+```
+
+To display all keys public in your GPG keyring.
+```
+gpg --list-keys >> "$(hostname)_$(date +%Y-%m-%d).txt"
+```
+
+To display all keys private in your GPG keyring.
+```
+gpg --list-secret-keys >> "$(hostname)_$(date +%Y-%m-%d).txt"
+```
+
+Inspect the trust model and trust levels assigned to keys.
+```
+gpg --check-trustdb >> "$(hostname)_$(date +%Y-%m-%d).txt"
+```
+
+Inspect the GPG configuration file for custom settings.
+```
+cat ~/.gnupg/gpg.conf >> "$(hostname)_$(date +%Y-%m-%d).txt"
+```
+
+To check the supported algorithms for encryption, signing, and compression.
+```
+gpg --version >> "$(hostname)_$(date +%Y-%m-%d).txt"
+```
 
 **9. Evaluate Libica configuration**
 Use the icainfo command to check on the CPACF feature code enablement. The icainfo command displays which CPACF functions are supported by the implementation inside the libica library. Issue the following command to show which cryptographic algorithms will be hardware-accelerated by the libica driver, and which one will remain software-only implementations.
