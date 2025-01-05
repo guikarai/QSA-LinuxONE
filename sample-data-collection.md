@@ -24,7 +24,37 @@ cat /proc/cpuinfo >> "$(hostname)_$(date +%Y-%m-%d).txt"
 
 **6. Evaluate OpenCryptoki configuration**
 
+Display slot info.
+```
+pkcsconf -s >> "$(hostname)_$(date +%Y-%m-%d).txt"
+```
+
+Display the list of available tokens by using the command.
+```
+pkcsconf -S >> "$(hostname)_$(date +%Y-%m-%d).txt"
+```
+
+Show the accumulated statistics from all users. Only the root user can display the accumulated statistics from other users.
+```
+pkcsstats -A >> "$(hostname)_$(date +%Y-%m-%d).txt"
+```
+
+Show the statistics from all users. Only the root user can display statistics from all users.
+```
+pkcsstats -t >> "$(hostname)_$(date +%Y-%m-%d).txt"
+```
+
 **7. Evaluate zKey configuration**
+
+To display the version number of zkey.
+```
+zkey --version >> "$(hostname)_$(date +%Y-%m-%d).txt"
+```
+
+To list all secure keys in the secure key repository and display their attributes.
+```
+zkey list >> "$(hostname)_$(date +%Y-%m-%d).txt"
+```
 
 **8. Evaluate OpenPGP configuration**
 To assess OpenPGP (GPG) configuration, certificates, and key materials on a Linux system, you can use the following commands.
