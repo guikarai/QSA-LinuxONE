@@ -27,11 +27,11 @@ To start a quantum-safe assessment on a Linux server, we typically need to evalu
 
 Then, we will need the following operational data collection:
   -	Infrastructure cryptographic services (hardware, software, process, device drivers, adjunct processors...)
-  -	API cryptographic services (CCA, LIBICA, OpenSSL, JAVA...)
+  -	API cryptographic services (CCA, LIBICA, OpenSSL...)
   -	Key management services (zKey, CCA, .pem, .key, .asc, .cer, .der, .pckcs11, .pkcs12 ...)
-  -	Network encryption services (OpenSSL, nmap, 
-  -	Data at rest encryption services
-  -	Application encryption services
+  -	Network encryption services (OpenSSL, tcpdump, nmap, ssh, tshark...)
+  -	Data at rest encryption services (LUKS, dmcrypt, cryptsetup...)
+  -	Application encryption services (OpenPGP, JAVA...)
 
 See detailed guidelines in incoming operational data collection chapters.
 
