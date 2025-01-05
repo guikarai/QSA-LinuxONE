@@ -14,13 +14,40 @@ A Linux on IBM Z user can easily check whether the Crypto Enablement feature is 
 cat /proc/cpuinfo >> "$(hostname)_$(date +%Y-%m-%d).txt"
 ```
 
-**2. Evaluate IBM Z processor configuration**
-
-**3. Evaluate Linux-390x-utils configuration**
+```
+lscpu >> "$(hostname)_$(date +%Y-%m-%d).txt"
+```
 
 **4. Evaluate IBM CCA configuration**
 
+Show the compliance state of the current domain.
+```
+panel.exe --qcomp >> "$(hostname)_$(date +%Y-%m-%d).txt"
+```
+
+Determine if a TKE is currently able to administer a specific active coprocessor.
+```
+panel.exe --query-tke >> "$(hostname)_$(date +%Y-%m-%d).txt"
+```
+
+
+
 **5. Evaluate JAVA configuration**
+
+Verify the installed Java version to ensure JCE is available.
+```
+java -version >> "$(hostname)_$(date +%Y-%m-%d).txt"
+```
+
+If your Java application uses SSL/TLS, validate its configuration with the following command.
+```
+java -Djavax.net.debug=ssl -version >> "$(hostname)_$(date +%Y-%m-%d).txt"
+```
+
+Display the installed security providers and their configuration.
+```
+java -Djava.security.debug=provider -version >> "$(hostname)_$(date +%Y-%m-%d).txt"
+```
 
 **6. Evaluate OpenCryptoki configuration**
 
