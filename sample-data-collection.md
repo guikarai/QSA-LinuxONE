@@ -201,4 +201,4 @@ openssl engine -c >> "$(hostname)_$(date +%Y-%m-%d).txt"
 
 
 Congratulations, you can now share the file with your IBM Expert Labs SME.
-Please, prepare yourself for the [Step 2.](https://github.com/guikarai/QSA-LinuxONE/blob/main/index.md)
+Please, prepare yourself for the [Step 2.]([https://github.com/guikarai/QSA-LinuxONE/blob/main/index.md](https://github.com/guikarai/QSA-LinuxONE/blob/main/index.md#step-2---24-hours-logs-dumps))
