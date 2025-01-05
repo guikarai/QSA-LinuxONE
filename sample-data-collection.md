@@ -18,7 +18,7 @@ cat /proc/cpuinfo >> "$(hostname)_$(date +%Y-%m-%d).txt"
 lscpu >> "$(hostname)_$(date +%Y-%m-%d).txt"
 ```
 
-**4. Evaluate IBM CCA configuration**
+**2. Evaluate IBM CCA configuration**
 
 Show the compliance state of the current domain.
 ```
@@ -50,7 +50,7 @@ List the coprocessors currently active in the Linux® system and their master ke
 panel.exe --status
 ```
 
-**5. Evaluate JAVA configuration**
+**3. Evaluate JAVA configuration**
 
 Verify the installed Java version to ensure JCE is available.
 ```
@@ -67,7 +67,7 @@ Display the installed security providers and their configuration.
 java -Djava.security.debug=provider -version >> "$(hostname)_$(date +%Y-%m-%d).txt"
 ```
 
-**6. Evaluate OpenCryptoki configuration**
+**4. Evaluate OpenCryptoki configuration**
 
 Display slot info.
 ```
@@ -89,7 +89,7 @@ Show the statistics from all users. Only the root user can display statistics fr
 pkcsstats -t >> "$(hostname)_$(date +%Y-%m-%d).txt"
 ```
 
-**7. Evaluate zKey configuration**
+**5. Evaluate zKey configuration**
 
 To display the version number of zkey.
 ```
@@ -101,7 +101,7 @@ To list all secure keys in the secure key repository and display their attribute
 zkey list >> "$(hostname)_$(date +%Y-%m-%d).txt"
 ```
 
-**8. Evaluate OpenPGP configuration**
+**6. Evaluate OpenPGP configuration**
 To assess OpenPGP (GPG) configuration, certificates, and key materials on a Linux system, you can use the following commands.
 
 Verify the installed GPG version to ensure it supports modern algorithms.
@@ -134,7 +134,7 @@ To check the supported algorithms for encryption, signing, and compression.
 gpg --version >> "$(hostname)_$(date +%Y-%m-%d).txt"
 ```
 
-**9. Evaluate Libica configuration**
+**7. Evaluate Libica configuration**
 
 Use the icainfo command to check on the CPACF feature code enablement. The icainfo command displays which CPACF functions are supported by the implementation inside the libica library. Issue the following command to show which cryptographic algorithms will be hardware-accelerated by the libica driver, and which one will remain software-only implementations.
 ```
@@ -150,7 +150,7 @@ Validate that the libica crypto API is working properly. Please issue the follow
 icastats >> "$(hostname)_$(date +%Y-%m-%d).txt"
 ```
 
-**10. Evaluate dmcrypt configuration**
+**8. Evaluate dmcrypt configuration**
 
 To list all active dm-crypt mappings.
 ```
@@ -178,14 +178,14 @@ cat /etc/crypttab >> "$(hostname)_$(date +%Y-%m-%d).txt"
 ```
 
 
-**11. Evaluate module configuration**
+**9. Evaluate module configuration**
 
 Use the lsmod command to check that all s390x crypto modules are properly loaded.
 ```
 lsmod >> "$(hostname)_$(date +%Y-%m-%d).txt"
 ```
 
-**12. Evaluate OpenSSL configuration**
+**10. Evaluate OpenSSL configuration**
 
 OpenSSL is commonly used for cryptographic operations on Linux. Check the version and algorithms used:
 ```
@@ -197,6 +197,6 @@ Let's check whether the dynamic engine loading support is enabled by default and
 openssl engine -c >> "$(hostname)_$(date +%Y-%m-%d).txt"
 ```
 
-**1. Evaluate OpenSSH Server Configuration**
+**11. Evaluate OpenSSH Configuration**
 
-**1. Evaluate OpenSSH Client Configuration**
+
