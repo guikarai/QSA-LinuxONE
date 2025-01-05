@@ -25,12 +25,30 @@ Show the compliance state of the current domain.
 panel.exe --qcomp >> "$(hostname)_$(date +%Y-%m-%d).txt"
 ```
 
+Show and verify the outbound authentication (OA) certificate chain that represents the chain of trust for the adapter firmware.
+```
+panel.exe --epoc-cert-validate >> "$(hostname)_$(date +%Y-%m-%d).txt"
+```
+
 Determine if a TKE is currently able to administer a specific active coprocessor.
 ```
 panel.exe --query-tke >> "$(hostname)_$(date +%Y-%m-%d).txt"
 ```
 
+List the labels and key types for all the keys in a designated key storage file.
+```
+panel.exe --ks-list --ks-type=DES >> "$(hostname)_$(date +%Y-%m-%d).txt"
+panel.exe --ks-list --ks-type=AES >> "$(hostname)_$(date +%Y-%m-%d).txt"
+panel.exe --ks-list --ks-type=PKA >> "$(hostname)_$(date +%Y-%m-%d).txt"
+panel.exe --ks-list --ks-type=CMB --kba-type=DES >> "$(hostname)_$(date +%Y-%m-%d).txt"
+panel.exe --ks-list --ks-type=CMB --kba-type=AES >> "$(hostname)_$(date +%Y-%m-%d).txt"
+panel.exe --ks-list --ks-type=CMB --kba-type=PKA >> "$(hostname)_$(date +%Y-%m-%d).txt"
+```
 
+List the coprocessors currently active in the Linux® system and their master key status.
+```
+panel.exe --status
+```
 
 **5. Evaluate JAVA configuration**
 
