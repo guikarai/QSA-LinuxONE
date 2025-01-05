@@ -60,6 +60,7 @@ gpg --version >> "$(hostname)_$(date +%Y-%m-%d).txt"
 ```
 
 **9. Evaluate Libica configuration**
+
 Use the icainfo command to check on the CPACF feature code enablement. The icainfo command displays which CPACF functions are supported by the implementation inside the libica library. Issue the following command to show which cryptographic algorithms will be hardware-accelerated by the libica driver, and which one will remain software-only implementations.
 ```
 icainfo --version >> "$(hostname)_$(date +%Y-%m-%d).txt"
@@ -75,6 +76,7 @@ icastats >> "$(hostname)_$(date +%Y-%m-%d).txt"
 ```
 
 **10. Evaluate dmcrypt configuration**
+
 To list all active dm-crypt mappings.
 ```
 dmsetup status >> "$(hostname)_$(date +%Y-%m-%d).txt"
@@ -102,12 +104,14 @@ cat /etc/crypttab >> "$(hostname)_$(date +%Y-%m-%d).txt"
 
 
 **11. Evaluate module configuration**
+
 Use the lsmod command to check that all s390x crypto modules are properly loaded.
 ```
 lsmod >> "$(hostname)_$(date +%Y-%m-%d).txt"
 ```
 
 **12. Evaluate OpenSSL configuration**
+
 OpenSSL is commonly used for cryptographic operations on Linux. Check the version and algorithms used:
 ```
 openssl version >> "$(hostname)_$(date +%Y-%m-%d).txt"
