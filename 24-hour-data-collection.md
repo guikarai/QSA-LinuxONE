@@ -108,7 +108,7 @@ echo "Script is running in the background."
 
 **Stop the script:**
 * If you need to stop the script, identify its background process using: ps aux | grep stats_logger.sh
-* Then kill the process: kill "<PID>"
+* Then kill the process: kill < the PID >
 
 ### 2. Test to perform an TCP/IP dump**
 
