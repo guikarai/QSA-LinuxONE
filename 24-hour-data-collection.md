@@ -113,8 +113,14 @@ chmod +x stats_logger.sh
 ```
 
 **Stop the script:**
-* If you need to stop the script, identify its background process using: ps aux | grep stats_logger.sh
-* Then kill the process: kill < the PID >
+* If you need to stop the script, identify its background process using:
+```
+ps aux | grep stats_logger.sh
+```
+* Then kill the process:
+```
+kill < the PID >
+```
 
 ### 2. Test to perform an TCP/IP dump**
 
