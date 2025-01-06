@@ -14,7 +14,7 @@ Contact for additional information and support regarding the assessment: guillau
 
 The following methodology relies on a 4 steps approaches:
 * **Step 1 - one time configuration dumps for validation**
-* **Step 2 - 04-24 hours logs dumps for analysis**
+* **Step 2 - 04-24H logs for analysis**
 * **Step 3 - Data Analysis and report generation**
 * **Step 4 - Half a day final workshop**
 
@@ -45,7 +45,7 @@ Operational data for a maximum of 1 day representing a period of significant act
 
 Once content of configuaration dumps is validated with your IBM TEL expert, you can proceed with Step 2. It will be about collecting various set of logs during 24 hours. 
 
-### Step 2 - 04-24 hours logs dumps
+### Step 2 - 04-24H hours logs dumps
 
 To finish the quantum-safe assessment on a Linux server, we need to evaluate the cryptographic algorithms in use and their potential vulnerabilities to quantum computing. To do so we need data collection for a representative period of time (From 4hours to 24hours). There isn’t a single Linux command specifically designed for this, but we can use various tools and steps to initiate the assessment including: tcpdump, icastats, cpacfstats, pckstats.
   
