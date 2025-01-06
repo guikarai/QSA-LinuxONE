@@ -83,7 +83,7 @@ echo "$ZCRYPTSTATS_FILE"
 
         # Run zcryptstats and save output to the file with a timestamp
         echo "Timestamp: $(date '+%Y-%m-%d %H:%M:%S')" >> "$ZCRYPTSTATS_FILE"
-        zcryptstats >> "$ZCRYPTSTATS_FILE" 2>&1
+        zcryptstats -o CSV >> "$ZCRYPTSTATS_FILE" 2>&1
         echo "------------------------------------------" >> "$ZCRYPTSTATS_FILE"
 
         # Wait for the specified interval (60 seconds)
@@ -108,7 +108,7 @@ echo "Script is running in the background."
 
 **Stop the script:**
 * If you need to stop the script, identify its background process using: ps aux | grep stats_logger.sh
-* Then kill the process: kill <PID>
+* Then kill the process: kill "<PID>"
 
 ### 2. Test to perform an TCP/IP dump**
 
