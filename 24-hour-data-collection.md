@@ -103,8 +103,14 @@ echo "Script is running in the background."
 
 **Script usage:**
 * Save the script as stats_logger.sh.
-* Make it executable: chmod +x stats_logger.sh
-* Run the script: ./stats_logger.sh
+* Make it executable:
+```
+chmod +x stats_logger.sh
+```
+* Run the script:
+```
+./stats_logger.sh
+```
 
 **Stop the script:**
 * If you need to stop the script, identify its background process using: ps aux | grep stats_logger.sh
