@@ -11,13 +11,14 @@ The following linux commands must display evidence of cryptographic activities. 
 ```
 cpacfstats
 ```
-If cpasftats is not installed/started, you can find here [instructions to turn it on](https://www.ibm.com/docs/de/linux-on-systems?topic=c-cpacfstats).
+If **cpasftats** is not installed/started, you can find here information about [how to install it](https://www.ibm.com/docs/en/linux-on-systems?topic=reference-commands-linuxonibm-z) and [how to use it](https://www.ibm.com/docs/en/linux-on-systems?topic=c-cpacfstats-2).
+
 
 **2. To perform an icastats data collection**
 ```
 icastats
 ```
-If icastats is not installed/started, you can find here [instructions to turn it on](https://www.ibm.com/docs/en/linux-on-systems?topic=reference-commands-linuxonibm-z).
+If **icastats** is not installed/started, you can find here information about [how to install it](https://www.ibm.com/docs/en/linux-on-systems?topic=libica-installing-from-distribution-packages) and [how to use it](https://www.ibm.com/docs/en/linux-on-systems?topic=tools-icastats).
 
 **3. To perform an zcryptstats data collection**
 ```
