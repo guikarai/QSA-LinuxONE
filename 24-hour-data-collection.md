@@ -42,7 +42,7 @@ If **tcpdump** is not installed, please according to your OS, install tcpdump ut
 
 ## Collecting required data
 
-### 1. Test to perform cpacfstats, icastats, zcryptstats data collection**
+### 1. Test to perform cpacfstats, icastats, zcryptstats data collection
 Here is the shell script that executes icastats, cpacfstats, and zcryptstats every 60 seconds for 24 hours in the background, with each command's output saved to a separate uniquely named file:
 ```
 #!/bin/bash
@@ -122,7 +122,7 @@ ps aux | grep stats_logger.sh
 kill < the PID >
 ```
 
-### 2. Test to perform an TCP/IP dump**
+### 2. Test to perform an TCP/IP dump
 
 To monitor a Network Interface for TLS Activities, use **tcpdump** to capture traffic on a given interface (e.g., eth0) and filter for TLS-related traffic (ports 443 and 8443 are common):
 ```
