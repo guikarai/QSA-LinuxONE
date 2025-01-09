@@ -3,6 +3,8 @@ This section is about collecting at first for each Linux Guest, information abou
 
 Results of a list of Linux commands to be redirected into a unique file per Linux Guest.
 
+## Linux on IBM Z or LinuxONE configuration dumps
+
 **0. To create the target a file to persist results of linux commands**
 ```
 touch "$(hostname)_$(date +%Y-%m-%d).txt"
@@ -177,7 +179,6 @@ Inspect /etc/crypttab to verify how encrypted devices are set up for auto-mounti
 cat /etc/crypttab >> "$(hostname)_$(date +%Y-%m-%d).txt"
 ```
 
-
 **9. Evaluate module configuration**
 
 Use the lsmod command to check that all s390x crypto modules are properly loaded.
@@ -202,3 +203,29 @@ openssl engine -c >> "$(hostname)_$(date +%Y-%m-%d).txt"
 
 Congratulations, you can now share the file with your IBM Expert Labs SME.
 Please, prepare yourself for the [Step 2.](https://github.com/guikarai/QSA-LinuxONE/blob/main/index.md#step-2---24-hours-logs-dumps)
+
+## z/VM configuration dumps
+
+**1. z/VM configuration files**
+It is required customer to capture, and to share the following:
+* TCPIP config file
+* SYSTEM CONFIG
+* SSL CONFIG
+
+**2. z/VM Configuration status**
+
+Crypto units that are available: z/VM guests do not have access to AP queues.
+```
+CP Q CRYPTO 
+```
+
+Adding in the AP operand, you get more information about the installed AP queues.
+```
+CP Q CRYPTO AP
+```
+
+The QUERY VIRTUAL CRYPTO command shows status information about the virtual
+cryptographic facilities of the z/VM guest.
+```
+CP Q V CRYPTO
+```
