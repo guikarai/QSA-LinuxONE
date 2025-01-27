@@ -1,3 +1,9 @@
+# *******************************************************************************************
+# QUANTUM-SAFE ON IBM Z AND LINUXONE WITH IBM
+# AUTHOR: GUILLAUME HOAREAU
+# PURPOSE OF THE FILLOWING IS TO LIST ALL KEYFILES AND KEYSTORES IN A LINUX VM
+# *******************************************************************************************
+
 import os
 import socket
 import pwd
