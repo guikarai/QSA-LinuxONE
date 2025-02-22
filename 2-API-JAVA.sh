@@ -2,7 +2,7 @@
 # QUANTUM-SAFE ON IBM Z AND LINUXONE WITH IBM
 # AUTHOR: GUILLAUME HOAREAU
 # PURPOSE OF THE FOLLOWING SCRIPT IS TO LIST IN A FILE JAVA API CONFIGURATION ATTRIBUTES OF A HOST
-# 1-INFRA
+# 2-API-JAVA
 # ****************************************************************************************************
 
 #!/bin/bash
