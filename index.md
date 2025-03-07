@@ -43,7 +43,7 @@ Operational data for a maximum of 1 day representing a period of significant act
 
 [This section](https://github.com/guikarai/QSA-LinuxONE/blob/main/sample-data-collection.md) will drive you through the process to collect sample and/or one time configuration dumps for validation. 
 
-Once content of configuaration dumps is validated with your IBM TEL expert, you can proceed with Step 2. It will be about collecting various set of logs during 24 hours. 
+Once content of configuaration dumps is validated with your IBM TEL expert, you can proceed with Step 2. It will be about collecting various set of logs during up to 24 hours. 
 
 ### Step 2 - 04-24H hours logs dumps
 
