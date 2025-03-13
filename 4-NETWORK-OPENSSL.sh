@@ -21,17 +21,17 @@ openssl engine -c > "4-network-openssl-engine-$(hostname)-$(date +%Y-%m-%d).txt"
 
 #Performance test to assess hardware encryption adherence with CPACF (AES128):
 echo "AES ENCRYPTION BENCHMARK"
-openssl speed aes-128-cbc > "4-network-openssl-aes-benchmark-$(hostname)-$(date +%Y-%m-%d).txt"
+openssl speed -evp aes-128-cbc > "4-network-openssl-aes-benchmark-$(hostname)-$(date +%Y-%m-%d).txt"
 echo "AES DECRYPTION BENCHMARK"
-openssl speed -decrypt aes-128-cbc >> "4-network-openssl-aes-benchmark-$(hostname)-$(date +%Y-%m-%d).txt"
+openssl speed -evp aes-128-cbc -decrypt >> "4-network-openssl-aes-benchmark-$(hostname)-$(date +%Y-%m-%d).txt"
 
 #Performance test to assess hardware encryption adherence with CPACF (SHA512):
 echo "SHA512 ENCRYPTION BENCHMARK"
-openssl speed sha512 > "4-network-openssl-sha512-benchmark-$(hostname)-$(date +%Y-%m-%d).txt"
+openssl speed -evp sha512 > "4-network-openssl-sha512-benchmark-$(hostname)-$(date +%Y-%m-%d).txt"
 
 #Performance test to assess hardware encryption adherence with CPACF (RSA2048):
 echo "RSA2024 ENCRYPTION BENCHMARK"
-openssl speed rsa2024 > "4-network-openssl-rsa2048-benchmark-$(hostname)-$(date +%Y-%m-%d).txt"
+openssl speed rsa2048 > "4-network-openssl-rsa2048-benchmark-$(hostname)-$(date +%Y-%m-%d).txt"
 
 #Performance test to assess hardware encryption adherence with CPACF (ECC-P256):
 echo "ECC-P256 ENCRYPTION BENCHMARK"
