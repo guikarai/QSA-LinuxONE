@@ -12,3 +12,6 @@ cat /etc/*issue* > "1-infra-sw-os-version-$(hostname)-$(date +%Y-%m-%d).txt"
 
 #Use the lsmod command to check that all s390x crypto modules are properly loaded.
 lsmod > "1-infra-sw-loaded-modules-$(hostname)-$(date +%Y-%m-%d).txt"
+
+#Check the status of crypto acceleration from Linux libraries
+cat /proc/crypto > "1-infra-sw-crypto-libraries-$(hostname)-$(date +%Y-%m-%d).txt"
